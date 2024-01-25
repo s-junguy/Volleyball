@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>829</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Eingabe</string>
+       </attribute>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>397</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="8" column="1">
+          <widget class="QSpinBox" name="teamNrEntfern">
+           <property name="styleSheet">
+            <string notr="true">QSpinBox{
+	color: rgb(255, 0, 0);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QDoubleSpinBox" name="eingabeLaengengrad">
+           <property name="decimals">
+            <number>9</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="teamname">
+           <property name="text">
+            <string>Teamname:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="eingabeName"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QDoubleSpinBox" name="eingabeBreitengrad">
+           <property name="decimals">
+            <number>9</number>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="koordinaten">
+           <property name="text">
+            <string>Breitengrad:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="eingabeNr"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="tableform">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.915789, y2:0.931, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+           </property>
+           <property name="text">
+            <string>Tabelle anzeigen</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Team Nr. des zu entfernenden Teams:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="ort">
+           <property name="text">
+            <string>Ort:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="helpbutton">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.915789, y2:0.931, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+           </property>
+           <property name="text">
+            <string>Hilfe</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Längengrad:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QPushButton" name="pushTeam">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.915789, y2:0.931, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+           </property>
+           <property name="text">
+            <string>Team in Tabelle speichern</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="teamnummer">
+           <property name="text">
+            <string>Team Nr.:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="eingabeOrt"/>
+         </item>
+         <item row="7" column="1">
+          <widget class="QPushButton" name="teamEntfernen">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+           </property>
+           <property name="text">
+            <string>Team entfernen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>382</y>
+          <width>401</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="teamsForSchedule">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+color: rgb(0, 0, 127)
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="loadgtxt">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.915789, y2:0.931, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+           </property>
+           <property name="text">
+            <string>Lade .gtxt Datei</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="loadteams">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.915789, y2:0.931, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+           </property>
+           <property name="text">
+            <string>Lade Teams aus Datei</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushBerechnung">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(88, 144, 255, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+           </property>
+           <property name="text">
+            <string>Spielplan für diese Teams berechnen:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="showpath">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652632, y2:0.938, stop:0 rgba(85, 170, 0, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+           </property>
+           <property name="text">
+            <string>Weg anzeigen für Spieltag:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="spieltagnr">
+           <property name="styleSheet">
+            <string notr="true">QSpinBox{
+	color: rgb(0, 85, 0)
+}</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QTabWidget" name="tabWidgetSpielplan">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>10</y>
+          <width>391</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Spielplan klein</string>
+         </attribute>
+         <widget class="QTextEdit" name="tabelle">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>381</width>
+            <height>251</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Spielplan groß</string>
+         </attribute>
+         <widget class="QTextEdit" name="schedulewritten">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>371</width>
+            <height>251</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QTableView" name="tableView">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>310</y>
+          <width>541</width>
+          <height>181</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Karte</string>
+       </attribute>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>1030</width>
+          <height>1030</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="zoombox">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <number>18</number>
+        </property>
+        <property name="value">
+         <number>9</number>
+        </property>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>10</y>
+          <width>254</width>
+          <height>83</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="1" column="0">
+          <widget class="QPushButton" name="west">
+           <property name="text">
+            <string>West</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="north">
+           <property name="text">
+            <string>Nord</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="south">
+           <property name="text">
+            <string>Süd</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="east">
+           <property name="text">
+            <string>Ost</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Zoomstufe:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>829</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
